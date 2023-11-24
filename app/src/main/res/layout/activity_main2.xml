@@ -4,7 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EA80FC"
     tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C6FF00"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="SnapSpot"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
 
     <SearchView
         android:layout_width="match_parent"
@@ -13,7 +32,7 @@
         android:queryHint="Enter a query to search.."
         android:scrollbarStyle="insideOverlay"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218"
-        tools:layout_editor_absoluteX="27dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
